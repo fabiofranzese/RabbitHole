@@ -17,14 +17,18 @@ struct HoleWidgetView: View {
     var body : some View {
         VStack{
             if HoleTracker.shared.discovered() {
-                Text("Today's Rabbit\nHole is:")
-                    .font(.subheadline)
-                    .bold()
-                    .padding()
-                Text(viewmodel.holes.last!.title)
+                Text("Today's")
                     .font(.title3)
                     .bold()
+                Text("Rabbit Hole:")
+                    .font(.title3)
+                    .bold()
+                    .padding(.bottom, 2)
+                Text(viewmodel.holes.last!.title)
+                    .font(.title2)
+                    .bold()
                     .foregroundStyle(orange)
+                    .multilineTextAlignment(.center)
             } else {
                 VStack{
                     Text("Unlock Today's")
