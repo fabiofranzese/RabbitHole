@@ -9,6 +9,6 @@ Its main features are:
 - A widget that allows to unlock and access the subject of the day right from the Home screen
 
 ## Screens
-![](https://github.com/fabiofranzese/RabbitHole/blob/main/Screens/IMG_0051.PNG)
+<img src="https://github.com/fabiofranzese/RabbitHole/blob/main/Screens/IMG_0051.PNG" alt="screen 1" width="50"/>
 ![](https://github.com/fabiofranzese/RabbitHole/blob/main/Screens/Screenshot%202024-12-18%20at%2020.12.23.jpeg)
 ![](https://github.com/fabiofranzese/RabbitHole/blob/main/Screens/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202024-12-18%20at%2020.04.24.png)
