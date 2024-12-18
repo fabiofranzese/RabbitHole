@@ -1,17 +1,18 @@
 //
-//  RabbitHoleApp.swift
-//  RabbitHole
+//  rabbitholeApp.swift
+//  rabbithole
 //
-//  Created by Fabio on 18/12/24.
+//  Created by Fabio on 16/12/24.
 //
 
 import SwiftUI
 
 @main
-struct RabbitHoleApp: App {
+struct rabbitholeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ViewModel())
         }
     }
 }

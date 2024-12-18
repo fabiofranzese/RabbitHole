@@ -6,14 +6,77 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E54C5C5E2D1333DC00EE830D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54C5C5D2D1333DC00EE830D /* WidgetKit.framework */; };
+		E54C5C602D1333DC00EE830D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54C5C5F2D1333DC00EE830D /* SwiftUI.framework */; };
+		E54C5C6B2D1333DE00EE830D /* holewidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E54C5C5B2D1333DC00EE830D /* holewidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E54C5C692D1333DE00EE830D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E54C5C362D132A7C00EE830D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E54C5C5A2D1333DC00EE830D;
+			remoteInfo = holewidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E54C5C702D1333DE00EE830D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E54C5C6B2D1333DE00EE830D /* holewidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E54C5C3E2D132A7C00EE830D /* RabbitHole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbitHole.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54C5C5B2D1333DC00EE830D /* holewidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = holewidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E54C5C5D2D1333DC00EE830D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E54C5C5F2D1333DC00EE830D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E54C5C722D13344B00EE830D /* holewidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = holewidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E54C5C6C2D1333DE00EE830D /* Exceptions for "holewidget" folder in "holewidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E54C5C5A2D1333DC00EE830D /* holewidgetExtension */;
+		};
+		E54C5C842D13402000EE830D /* Exceptions for "RabbitHole" folder in "holewidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Data.swift,
+				HoleTrackers.swift,
+			);
+			target = E54C5C5A2D1333DC00EE830D /* holewidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E54C5C402D132A7C00EE830D /* RabbitHole */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E54C5C842D13402000EE830D /* Exceptions for "RabbitHole" folder in "holewidgetExtension" target */,
+			);
 			path = RabbitHole;
+			sourceTree = "<group>";
+		};
+		E54C5C612D1333DC00EE830D /* holewidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E54C5C6C2D1333DE00EE830D /* Exceptions for "holewidget" folder in "holewidgetExtension" target */,
+			);
+			path = holewidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +89,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E54C5C582D1333DC00EE830D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54C5C602D1333DC00EE830D /* SwiftUI.framework in Frameworks */,
+				E54C5C5E2D1333DC00EE830D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E54C5C352D132A7C00EE830D = {
 			isa = PBXGroup;
 			children = (
+				E54C5C722D13344B00EE830D /* holewidgetExtension.entitlements */,
 				E54C5C402D132A7C00EE830D /* RabbitHole */,
+				E54C5C612D1333DC00EE830D /* holewidget */,
+				E54C5C5C2D1333DC00EE830D /* Frameworks */,
 				E54C5C3F2D132A7C00EE830D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +116,18 @@
 			isa = PBXGroup;
 			children = (
 				E54C5C3E2D132A7C00EE830D /* RabbitHole.app */,
+				E54C5C5B2D1333DC00EE830D /* holewidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E54C5C5C2D1333DC00EE830D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E54C5C5D2D1333DC00EE830D /* WidgetKit.framework */,
+				E54C5C5F2D1333DC00EE830D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +140,12 @@
 				E54C5C3A2D132A7C00EE830D /* Sources */,
 				E54C5C3B2D132A7C00EE830D /* Frameworks */,
 				E54C5C3C2D132A7C00EE830D /* Resources */,
+				E54C5C702D1333DE00EE830D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E54C5C6A2D1333DE00EE830D /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				E54C5C402D132A7C00EE830D /* RabbitHole */,
@@ -69,6 +156,28 @@
 			productName = RabbitHole;
 			productReference = E54C5C3E2D132A7C00EE830D /* RabbitHole.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E54C5C5A2D1333DC00EE830D /* holewidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E54C5C6D2D1333DE00EE830D /* Build configuration list for PBXNativeTarget "holewidgetExtension" */;
+			buildPhases = (
+				E54C5C572D1333DC00EE830D /* Sources */,
+				E54C5C582D1333DC00EE830D /* Frameworks */,
+				E54C5C592D1333DC00EE830D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E54C5C612D1333DC00EE830D /* holewidget */,
+			);
+			name = holewidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = holewidgetExtension;
+			productReference = E54C5C5B2D1333DC00EE830D /* holewidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +190,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					E54C5C3D2D132A7C00EE830D = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					E54C5C5A2D1333DC00EE830D = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -100,12 +212,20 @@
 			projectRoot = "";
 			targets = (
 				E54C5C3D2D132A7C00EE830D /* RabbitHole */,
+				E54C5C5A2D1333DC00EE830D /* holewidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E54C5C3C2D132A7C00EE830D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E54C5C592D1333DC00EE830D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +242,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E54C5C572D1333DC00EE830D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E54C5C6A2D1333DE00EE830D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E54C5C5A2D1333DC00EE830D /* holewidgetExtension */;
+			targetProxy = E54C5C692D1333DE00EE830D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E54C5C4A2D132A7D00EE830D /* Debug */ = {
@@ -249,12 +384,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RabbitHole/RabbitHole.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RabbitHole/Preview Content\"";
 				DEVELOPMENT_TEAM = 3A97D54DHC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rabbit Hole";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -278,12 +415,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RabbitHole/RabbitHole.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RabbitHole/Preview Content\"";
 				DEVELOPMENT_TEAM = 3A97D54DHC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rabbit Hole";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,6 +435,62 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rabbithole.hole.RabbitHole;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E54C5C6E2D1333DE00EE830D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = holewidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A97D54DHC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = holewidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = holewidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbithole.hole.RabbitHole.holewidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E54C5C6F2D1333DE00EE830D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = holewidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A97D54DHC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = holewidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = holewidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rabbithole.hole.RabbitHole.holewidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,6 +514,15 @@
 			buildConfigurations = (
 				E54C5C4D2D132A7D00EE830D /* Debug */,
 				E54C5C4E2D132A7D00EE830D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E54C5C6D2D1333DE00EE830D /* Build configuration list for PBXNativeTarget "holewidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E54C5C6E2D1333DE00EE830D /* Debug */,
+				E54C5C6F2D1333DE00EE830D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
